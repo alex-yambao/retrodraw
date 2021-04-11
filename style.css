@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #eee;
+  }
+  
+  header {
+    font-size: 64px;
+    letter-spacing: 32px;
+    font-family: sans-serif;
+    border-bottom: 1px solid white;
+    margin-bottom: 64px;
+  }
+  
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .palette, .controls {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .palette button {
+    margin-right: 4px;
+  }
+  
+  .palette button,
+  .controls button {
+    cursor: pointer;
+    flex: 0 0 64px;
+    width: 64px;
+    border: 1px solid black;
+    margin-bottom: 4px;
+  }
+  
+  .palette button {
+    transition: all .3s ease;
+  }
+  
+  .palette button.active {
+    border: 4px solid gold;
+    transform: scale(1.3) rotate(45deg);
+  }
+  
+  .grid {
+    width: 514px;
+    height: 514px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 48px;
+    border: 1px solid black;
+    background: #ccc;
+  }
+  
+  .customGrid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 48px;
+    border: 1px solid black;
+    background: #ccc;
+    width: fit-content;
+    height: fit-content;
+  }
+
+  .cell {
+    flex: 0 0 64px;
+    height: 64px;
+    border: 1px solid black;
+  }
+  
+
+  .controls button {
+    background: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 4px;
+  }
+
+  .addColor {
+    height: 30px;
+    width: 18vw;
+  }
+
+  .addColorButton {
+    height: 30px;
+    width: fit-content;
+    padding: 3px;
+    font-weight: bold;
+    border: black solid 2px;
+    background: green;
+  }
+
+  .removeColorButton {
+    height: 30px;
+    width: fit-content;
+    padding: 3px;
+    font-weight: bold;
+    border: black solid 2px;
+    background: red;
+  }
+
+  .widget {
+    margin-top: 10px;
+  }
+
+  .newGrid {
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 10px;
+  }
+
+  .newGrid p {
+    text-decoration: underline;
+  }
+
+  .newGrid input {
+    display: list-item;
+    background: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 4px;
+    margin: 10px;
+  }
+
+
