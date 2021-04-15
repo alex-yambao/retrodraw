@@ -95,9 +95,11 @@ function onFillEmptyClick () {
      $('.palette').prepend(newButton);
     newButton.css('background-color', newColor);
     $('.palette button').removeClass('active');
+    $('.palette button').click(onPaletteClick);
     newButton.addClass('active');
  });
 
+ $('.palette button').click(onPaletteClick);
 
  //removes new color button from palette
  $('.removeColorButton').click(function () {
